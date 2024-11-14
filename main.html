@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first project</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.js" </head>
+
+<body>
+
+
+    <div class="row">
+        <div class="left" style="background-color: rgb(8, 153, 211);">
+          <h2>Menu</h2>
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+          <ul id="myMenu">
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="VAG.HTML">PHP</a></li>
+            <li><a href="">Python</a></li>
+            <li><a href="">jQuery</a></li>
+            <li><a href="">SQL</a></li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Node.js</a></li>
+          </ul>
+        </div>
+        
+       
+      
+        <script>
+            function myFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("mySearch");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myMenu");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>online shop</h1>
+            </div>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#shop" id="shops">Shop</a></li>
+                <li><a href="#review" id="reviews">Review</a></li>
+                <li><a href="#blog" id="blogs">Blog</a></li>
+                <li><a href="#contact" id="contacts">Contact</a></li>
+                
+            </ul>
+            <div class="icon">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+
+          
+           
+        
+                
+                
+
+
+
+
+
+
+        <!-- main page -->
+        <div class="main">
+            <div class="mainText">
+                <h2>Fashion Hub</h2>
+                <h1>Fashion For Always</h1>
+                <h2>Always New Collection .</h2>
+                <button>Explore</button>
+            </div>
+            <img src="main.png" alt="">
+        </div>
+
+
+
+
+
+
+
+
+        <!-- shopping card -->
+
+        <div class="shop" id="shop">
+            <div class="head">
+                <h1>Treding <span>Cloth's</span></h1>
+
+                <h1><span>Female</span>TOP</h1>
+            </div>
+            <div class="cards">
+                <div class="crd">
+                    <img src="download.jfif" alt="">
+                    <h3>T shirt</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Product code:443</p>
+                    <h3>TK 221 Only</h3>
+                    <button class="button">Order</button>
+                </div>
+                <div class="crd">
+                    <img src="download (1).jfif" alt="">
+                    <h3>T shirt</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Product code:343</p>
+                    <h3>TK221 Only</h3>
+                    <button type="button">Order</button>
+                </div>
+                <div class="crd">
+                    <img src="download (2).jfif" alt="">
+                    <h3>T shirt</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Product code:756</p>
+                    <h3>TK221 Only</h3>
+                    <button type="button">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="crd">
+                <img src="download (3).jfif" alt="">
+                <h3>Shose</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:436</p>
+                <h3>TK200 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="download (4).jfif" alt="">
+                <h3>Shose</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:464</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="download (5).jfif" alt="">
+                <h3>Shose</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:836</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="crd">
+                <img src="download (6).jfif" alt="">
+                <h3>Juwalari</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:748</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="download (7).jfif" alt="">
+                <h3>Juwalari</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:937</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="download (7).jfif" alt="">
+                <h3>Juwalari</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:373</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="cards">
+            <div class="crd">
+                <img src="download (8).jfif" alt="">
+                <h3>Juwalari</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:738</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="download (9).jfif" alt="">
+                <h3>Juwalari</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:594</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="pexels-photo-1070360.jpeg" alt="">
+                <h3>Shose</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:440</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+        </div>
+
+
+
+        <div class="cards">
+            <div class="crd">
+                <img src="pexels-photo-1895019.webp" alt="">
+                <h3>Shose</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:484</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="photo-1503341733017-1901578f9f1e.avif" alt="">
+                <h3>T shirt</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:934</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+            <div class="crd">
+                <img src="gg.avif" alt="">
+                <h3>T shirt</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Product code:343</p>
+                <h3>TK221 Only</h3>
+                <button type="button">Order</button>
+            </div>
+        </div>
+
+
+
+        <!-- review -->
+
+        <div class="customer" id="review">
+            <div class="head">
+                <h1>Customer <span>Review</span></h1>
+            </div>
+            <div class="reviews">
+                <div class="rCard">
+                    <img src="download (10).jfif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aliquam minima.</p>
+                    <button>More.</button>
+                </div>
+                <div class="rCard">
+                    <img src="download (11).jfif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aliquam minima.</p>
+                    <button>More.</button>
+                </div>
+                <div class="rCard">
+                    <img src="download (12).jfif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aliquam minima.</p>
+                    <button>More.</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- blog -->
+        <div class="read" id="blog">
+            <div class="head">
+                <h1>Read <span>Blog's</span></h1>
+            </div>
+            <div class="blog">
+                <div class="blogCard">
+                    <img src="tt.avif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, ullam.</p>
+                    <a href="https://codesupply.co/fashion-blogs/">Read More</a>
+                </div>
+                <div class="blogCard">
+                    <img src="pp.avif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, ullam.</p>
+                    <a href="https://codesupply.co/fashion-blogs/">Read More</a>
+                </div>
+            </div>
+        </div>
+
+<center>
+            <video   width="800;" height="300" autoplay loop>
+            <source src="ad.mp4"
+   
+          type="video/mp4">
+            </video>
+</center>
+
+        <!-- contact  -->
+        <div class="contact" id="contact">
+            <div class="head">
+                <h1>Contact <span>Us</span></h1>
+            </div>
+            </div>
+        
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="text">
+                <h2>Online shopping</h2>
+                <p>Mobile:  4747788222</p>
+                <p>address:  Mirpur Dhaka .</p>
+                <p>country:  Bangladash.</p>
+            </div>
+            <div class="text">
+                <h2>Explore</h2>
+                <p>All</p>
+                <p>Rated</p>
+                <p>Scores</p>
+                <p>Scores</p>
+
+
+            </div>
+            <div class="text">
+                <h2>Connect</h2>
+                <p>Facebook</p>
+                <p>Connect</p>
+                <p>Insta</p>
+                <p>Twitter</p>
+                
+            </div>
+            <div class="text">
+                <h2>Nity Grity</h2>
+                <p>Term & Condition</p>
+                <p>Privacy Policy </p>
+                <p>FAQs</p>
+                <p>Special credits</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- item Page -->
+     
+    <div class="itemPage">
+       
+        <img id="itemImg" src="" alt="">
+        <div class="itemText">
+            <h3>Trending</h3>
+            <h3>$221 Only</h3>
+           
+            <p>Quantity</p>
+            <input type="number" value="1">
+            <h2>Available Offer's</h2>
+            <p>Special PriceGet extra 13% off (price inclusive of cashback/coupon)</p>
+            <p>Bank Offer₹15 off on UPI Transaction</p>
+            <p>Bank OfferFlat ₹200 off on HDFC Bank Credit/Debit</p>
+            <p>Bank OfferFlat ₹200 off on HDFC Bank Credit/Debit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,<br>
+                optio rationea dipisicing elit. Possimus, optio ratione.</p>
+            <a href="">Back</a>
+           
+            <a id="buyBtn">Buy Now</a>
+
+
+           
+        </div>
+    </div>
+
+     
+
+    <div class="buyPage">
+        <form action="https://api.web3forms.com/submit" method="POST" method="POST" class=" contact-left">
+        <div class="cross">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="buyText">
+
+        </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
